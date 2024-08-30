@@ -1,3 +1,108 @@
+
+
+#####################           File and Directory Management                 #####################
+
+# Rename a file or directory
+mv /path/to/old_name /path/to/new_name
+
+# Create multiple directories at once
+mkdir -p /path/to/dir1 /path/to/dir2
+
+# Display file contents in octal format
+od -c /path/to/file
+
+# List all files and directories with detailed information including hidden ones
+ls -la
+
+
+#####################           System Monitoring and Management                 #####################  
+
+# Display the number of currently running processes
+ps aux | wc -l
+
+# Check for open files by a specific process
+lsof -p PID
+
+# Check memory usage for all processes
+pmap -x PID
+
+# Monitor real-time network traffic
+tcpdump
+
+# Display the current system load average
+uptime
+
+# Display the most recent kernel messages
+dmesg | less
+
+# Display and manage the cron daemon status
+systemctl status cron
+
+# Show disk I/O statistics
+iostat
+
+# Display system information for all hardware components
+hwinfo
+
+
+
+#####################           Network and Connectivity             ########################
+
+# Display all active network interfaces and their configurations
+ip addr show
+
+# Display routing table
+ip route show
+
+# Display all network connections and listening ports with process IDs
+netstat -tulnp
+
+# Check if a specific port is open on a remote host
+nmap -p port hostname
+
+# Send a TCP SYN packet to a specific port to check if it's open
+nc -zv hostname port
+
+# Resolve the hostname to its IP address
+host hostname
+
+# Display the reverse DNS record for an IP address
+nslookup IP_address
+
+
+######################          Archiving and Compression                ########################
+
+# Create a gzipped tar archive of multiple files
+tar -czf archive_name.tar.gz file1 file2
+
+# Extract a gzipped tar archive into the current directory
+tar -xzf archive_name.tar.gz
+
+# Create a bzip2-compressed tar archive
+tar -cjf archive_name.tar.bz2 /path/to/directory
+
+# Extract a bzip2-compressed tar archive
+tar -xjf archive_name.tar.bz2
+
+
+######################           User and Permissions                ####################
+
+# Change the group ownership of a file or directory
+chgrp group_name /path/to/file_or_directory
+
+# Change the owner of a file or directory
+chown user_name /path/to/file_or_directory
+
+# View current user groups
+groups
+
+# Add a user to a group
+sudo usermod -aG group_name user_name
+
+
+#############################                ALL                ##############################
+
+
 # Display hidden files in the current directory
 ls -a
 
@@ -174,3 +279,6 @@ atq
 
 # Remove a scheduled task
 atrm job_number
+
+
+
