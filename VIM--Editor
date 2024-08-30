@@ -1,0 +1,280 @@
+# Open a file in Vim
+vim filename
+
+# Switch to insert mode (start typing)
+i
+
+# Switch to insert mode at the beginning of the line
+I
+
+# Switch to insert mode at the end of the line
+A
+
+# Switch to command mode (after typing)
+<Esc>
+
+# Save changes and continue editing
+:w
+
+# Save changes and exit Vim
+:wq
+
+# Save changes and exit Vim (alternative command)
+:x
+
+# Exit Vim without saving changes
+:q!
+
+# Force quit Vim without saving changes
+:qa!
+
+# Save changes as a new file (save as)
+:w new_filename
+
+# Open a new file in the current Vim session
+:e another_filename
+
+# Split the window horizontally and open a new file
+:split filename
+
+# Split the window vertically and open a new file
+:vsplit filename
+
+# Switch between split windows
+<C-w><C-w>
+
+# Close the current split window
+<C-w>c
+
+# Undo the last change
+u
+
+# Redo the undone change
+<C-r>
+
+# Copy (yank) a line
+yy
+
+# Copy (yank) a word
+yaw
+
+# Copy (yank) text from the cursor position to the end of the line
+y$
+
+# Paste the copied (yanked) text
+p
+
+# Cut (delete) a line
+dd
+
+# Cut (delete) a word
+dw
+
+# Cut (delete) text from the cursor position to the end of the line
+d$
+
+# Delete a single character
+x
+
+# Search for a pattern in the file
+/pattern
+
+# Find the next occurrence of the search pattern
+n
+
+# Find the previous occurrence of the search pattern
+N
+
+# Replace the first occurrence of 'old' with 'new' in the current line
+:s/old/new/
+
+# Replace all occurrences of 'old' with 'new' in the current line
+:s/old/new/g
+
+# Replace all occurrences of 'old' with 'new' in the entire file
+:%s/old/new/g
+
+# Replace all occurrences of 'old' with 'new' in the entire file with confirmation
+:%s/old/new/gc
+
+# Move the cursor to the beginning of the line
+0 (zero)
+
+# Move the cursor to the end of the line
+$
+
+# Move the cursor to the next word
+w
+
+# Move the cursor to the previous word
+b
+
+# Move the cursor to the start of the next paragraph
+}
+
+# Move the cursor to the start of the previous paragraph
+{
+
+# Jump to the top of the file
+gg
+
+# Jump to the bottom of the file
+G
+
+# Jump to a specific line number
+:num<CR> (e.g., :10<CR>)
+
+# Open a new line below the current line and switch to insert mode
+o
+
+# Open a new line above the current line and switch to insert mode
+O
+
+# Delete all lines in the file
+ggdG
+
+# Indent the current line
+>>
+
+# Un-indent the current line
+<<
+
+# Highlight matching parentheses or brackets
+% (while cursor is on the parenthesis or bracket)
+
+# Show line numbers
+:set number
+
+# Hide line numbers
+:set nonumber
+
+# Enable syntax highlighting
+:syntax on
+
+# Disable syntax highlighting
+:syntax off
+
+# Turn on relative line numbers
+:set relativenumber
+
+# Turn off relative line numbers
+:set norelativenumber
+
+# Show Vim help documentation
+:help
+
+# Show Vim help for a specific command
+:help command_name
+
+# Open Vim in read-only mode
+view filename
+
+# Quit Vim (when there are no changes)
+:q
+
+# Open the command line inside Vim (execute a shell command)
+:!command
+
+# Open a file explorer inside Vim
+:Explore
+
+# Increase font size (in GUI Vim)
+:gui=+
+
+# Decrease font size (in GUI Vim)
+:gui=-
+
+
+  ######################################       Advanced Vim Commands           ###########################################################
+
+
+# Repeat the last command
+.
+
+# Record a macro (press q followed by a letter to start recording)
+q<letter>
+
+# Stop recording a macro
+q
+
+# Play the recorded macro (press @ followed by the letter used for recording)
+@<letter>
+
+# Display registers (clipboard contents)
+:registers
+
+# Execute the last macro recorded or played
+@@
+
+# Perform a visual selection (highlight text)
+v
+
+# Perform a visual line selection (select entire lines)
+V
+
+# Perform a visual block selection (select a block of text)
+<C-v>
+
+# Convert selected text to uppercase
+gU
+
+# Convert selected text to lowercase
+gu
+
+# Comment out the selected lines (requires setting up a comment command)
+:'<,'>s/^/#/g
+
+# Uncomment the selected lines
+:'<,'>s/^#//g
+
+# Join the current line with the next line
+J
+
+# Sort selected lines alphabetically
+:'<,'>sort
+
+# Sort selected lines numerically
+:'<,'>sort n
+
+# Replace tabs with spaces
+:set expandtab
+
+# Replace spaces with tabs
+:set noexpandtab
+
+# Convert the entire file to UNIX format (LF line endings)
+:set fileformat=unix
+
+# Convert the entire file to Windows format (CRLF line endings)
+:set fileformat=dos
+
+# Open a file in read-only mode
+view filename
+
+# Edit a file with superuser privileges
+:sudoedit filename
+
+# Toggle between last two files edited
+<C-^>
+
+# Read in contents of another file at the cursor position
+:r filename
+
+# Write part of the buffer to a file
+:w filename
+
+# Execute the command on the entire buffer
+:argdo command
+
+# Remove trailing whitespace
+:%s/\s\+$//e
+
+# Center the cursor vertically in the screen
+zz
+
+# Center the cursor horizontally in the screen
+zH
+
+# Center the cursor in both dimensions
+zL
+
