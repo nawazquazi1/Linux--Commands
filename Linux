@@ -25,12 +25,6 @@ cmp /path/to/file1 /path/to/file2
 # Display a file’s content with line numbers
 nl /path/to/file
 
-# Display only the specified number of lines from the start of a file
-head -n 20 /path/to/file
-
-# Display only the specified number of lines from the end of a file
-tail -n 20 /path/to/file
-
 # Show the differences between two files line by line
 diff /path/to/file1 /path/to/file2
 
