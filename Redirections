@@ -1,0 +1,38 @@
+# Redirect standard output to a file (overwrite the file)
+command > file.txt
+
+# Redirect standard output to a file (append to the file)
+command >> file.txt
+
+# Redirect standard error to a file (overwrite the file)
+command 2> error.txt
+
+# Redirect standard error to a file (append to the file)
+command 2>> error.txt
+
+# Redirect standard output and standard error to the same file (overwrite the file)
+command > file.txt 2>&1
+
+# Redirect standard output and standard error to the same file (append to the file)
+command >> file.txt 2>&1
+
+# Redirect standard output to a file and standard error to another file
+command > output.txt 2> error.txt
+
+# Redirect standard input from a file
+command < file.txt
+
+# Redirect standard input from a file and standard output to another file
+command < input.txt > output.txt
+
+# Redirect standard input and standard error to different files
+command < input.txt 2> error.txt
+
+# Use a command's output as the input for another command (pipe)
+command1 | command2
+
+# Use multiple commands, with output from each command being used as input for the next (pipe)
+command1 | command2 | command3
+
+# Redirect output of a command to another command using a process substitution
+command1 <(command2)
