@@ -1,0 +1,140 @@
+# Display information about the CPU
+lscpu
+
+# Display information about memory usage
+free -h
+
+# Display detailed system information
+uname -a
+
+# Display information about all disks and partitions
+lsblk
+
+# Display information about USB devices
+lsusb
+
+# Display information about PCI devices
+lspci
+
+# Display information about the system’s hardware
+dmidecode
+
+# List all available services and their statuses
+systemctl list-units --type=service
+
+# Start a service
+sudo systemctl start service_name
+
+# Stop a service
+sudo systemctl stop service_name
+
+# Restart a service
+sudo systemctl restart service_name
+
+# Check the status of a service
+sudo systemctl status service_name
+
+# Enable a service to start on boot
+sudo systemctl enable service_name
+
+# Disable a service from starting on boot
+sudo systemctl disable service_name
+
+# List all active processes
+top
+
+# Search for a process by name
+pgrep process_name
+
+# Show the last 10 system log entries
+dmesg | tail
+
+# View the system log
+journalctl
+
+# Check disk space usage of a file system
+df -hT
+
+# Display the current user
+whoami
+
+# Display logged in users
+w
+
+# Show the currently logged in users
+users
+
+# Display the last login sessions
+last
+
+# Display system date and time
+date
+
+# Synchronize system time with a remote server
+sudo ntpdate time.nist.gov
+
+# Check if a specific port is open on a remote host
+nc -zv hostname port
+
+# Test network connectivity to a remote host
+ping hostname
+
+# Trace the route taken by packets to a remote host
+traceroute hostname
+
+# Display network statistics
+ifstat
+
+# Monitor system performance and resource usage
+vmstat
+
+# Display memory usage in a human-readable format
+pmap -x PID
+
+# Display and manage scheduled tasks
+crontab -l
+
+# Edit scheduled tasks
+crontab -e
+
+# Remove a scheduled task
+crontab -r
+
+# Schedule a one-time task to run at a specific time
+at HH:MM YYYY-MM-DD
+
+# Display scheduled tasks
+atq
+
+# Remove a scheduled task
+atrm job_number
+
+# Show detailed information about system memory
+dmidecode --type memory
+
+# Display the status of all mounted filesystems
+mount
+
+# Monitor system calls in real-time
+strace -e trace=all -p PID
+
+# Show the history of commands executed in the shell
+history
+
+# Show the system’s hostname
+hostname
+
+# Display the last few lines of a system log file
+tail /var/log/syslog
+
+# Check the system’s uptime
+uptime
+
+# Monitor disk I/O performance
+iostat
+
+# Show current system load averages
+uptime
+
+# Display information about kernel parameters
+sysctl -a
