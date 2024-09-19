@@ -1,6 +1,6 @@
 
 
-#####################           File and Directory Management                 #####################
+#####################           File and Directory Management                 ########################
 
 # Rename a file or directory
 mv /path/to/old_name /path/to/new_name
